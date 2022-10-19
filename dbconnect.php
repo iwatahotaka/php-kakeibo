@@ -1,9 +1,11 @@
 <?php
 
+
+//例外処理(tryとcatch)
 try {
 
   $pdo = new PDO(
-    'mysql:dbname=YOUR_DB_NAME;host=localhost;charset=utf8mb4',
+    'mysql:dbname=PHP-kakeibo;host=localhost;charset=utf8mb4',
     'root',
     '',
     [
