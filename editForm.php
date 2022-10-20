@@ -1,3 +1,18 @@
+<?php
+
+//DBno接続
+include_once('./dbconnect.php');
+
+//選択されたidを取得
+$id = $_GET['id'];
+var_dump($_GET);
+
+//編集するデータを取得
+//SQL作成
+$sql = "SELECT * FROM records WHERE id = :id";
+
+?>
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>
